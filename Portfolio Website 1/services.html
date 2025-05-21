@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Bhumik Shah</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #18181B;
+            color: #fff;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            left: -50px;
+            width: 110%;
+            height: 110%;
+            background: radial-gradient(circle, rgba(56, 142, 60, 0.2), rgba(0, 0, 0, 0.9));
+            z-index: -1;
+            animation: animateBg 6s infinite linear alternate;
+        }
+
+        @keyframes animateBg {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 3rem;
+      background-color: #333;
+    }
+
+    .logo i {
+      font-size: 24px;
+      color: var(--primary-color);
+    }
+
+    .links a {
+      color: #fff;
+      margin-left: 2rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .links a:hover,
+    .links a.active {
+      color: var(--primary-color);
+    }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 30px;
+            text-align: center;
+            background: #27272A;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(56, 142, 60, 0.3);
+            position: relative;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #388e3c;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #ccc;
+        }
+
+        .service-card {
+            background: #202024;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 12px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            border: 1px solid #333;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(56, 142, 60, 0.5);
+        }
+
+        .price {
+            font-size: 1.2rem;
+            color: #388e3c;
+            font-weight: bold;
+        }
+
+        .service-form {
+            margin-top: 30px;
+            padding: 20px;
+            background: #222;
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        .service-form input, 
+        .service-form select, 
+        .service-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            background: #333;
+            border: none;
+            border-radius: 6px;
+            color: #fff;
+            font-size: 1rem;
+        }
+
+        .service-form input::placeholder, 
+        .service-form textarea::placeholder {
+            color: #bbb;
+        }
+
+        .service-form button {
+            margin-top: 15px;
+            padding: 12px 18px;
+            background: #388e3c;
+            border: none;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+            border-radius: 6px;
+        }
+
+        .service-form button:hover {
+            background: #2e7d32;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            font-size: 1rem;
+        }
+
+        .contact-info span {
+            color: #388e3c;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+          <i class="fa-solid fa-code"></i>
+        </div>
+        <div class="links">
+          <a href="index.html">About</a>
+          <a href="portfolio.html" class="active">Portfolio</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+
+    <div class="container">
+        <h1>My Services</h1>
+        <p>Professional video editing, motion graphics, and design services tailored to your needs.</p>
+
+        <div class="service-card">
+            <h2>Basic Editing</h2>
+            <p>✔ Smooth Cuts & Transitions  
+               ✔ Color Grading & Audio Syncing  
+               ✔ Background Music Integration  
+            </p>
+            <p class="price">₹250 - ₹1,000/video</p>
+        </div>
+
+        <div class="service-card">
+            <h2>Advanced Editing</h2>
+            <p>✔ Motion Graphics & Cinematic Effects  
+               ✔ Seamless Transitions & Visual Enhancements  
+               ✔ SFX, Color Correction, and Advanced Audio Mixing  
+            </p>
+            <p class="price">₹1,000 - ₹3,500/video</p>
+        </div>
+
+        <div class="service-card">
+            <h2>Custom Edits</h2>
+            <p>✔ 3D Motion Graphics & VFX  
+               ✔ High-Level Post-Production 
+               ✔ Fully Personalized Editing for Special Projects  
+            </p>
+            <p class="price">₹500+ (Price based on project complexity)</p>
+        </div>
+
+        <h2>Request a Service</h2>
+        <div class="service-form">
+            <form action="#" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+                <label for="service">Select a Service:</label>
+                <select id="service" name="service">
+                    <option value="basic">Basic Editing</option>
+                    <option value="advanced">Advanced Editing</option>
+                    <option value="custom">Custom Editing</option>
+                </select>
+
+                <label for="details">Project Details:</label>
+                <textarea id="details" name="details" rows="4" required placeholder="Describe your project requirements"></textarea>
+
+                <button type="submit">Submit Request</button>
+            </form>
+        </div>
+
+        <div class="contact-info">
+            <p>For inquiries, contact me directly:</p>
+            <p>Email: <span>bhumik1906@gmail.com</span></p>
+            <p>Discord: <span>Bhumik19</span></p>
+        </div>
+    </div>
+
+</body>
+</html>
