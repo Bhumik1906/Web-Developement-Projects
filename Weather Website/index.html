@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <div class="card">
+    <div class="search">
+      <input type="text" placeholder="Enter City Name" spellcheck="false"/>
+      <button><img src="Images/search.png" alt="Search"/></button>
+    </div>
+    <div class="error">
+      <p>Invalid City Name</p>
+    </div>
+    <div class="weather">
+      <img src="Images/drizzle.png" class="weather--icon" alt="Weather Icon"/>
+      <h1 class="temp">30°C</h1>
+      <h2 class="city">Udaipur</h2>
+      <p class="description">Drizzle</p>
+      <div class="details">
+        <div class="col">
+          <img src="Images/humidity.png" alt="Humidity"/>
+          <div>
+            <p class="humidity">42%</p>
+            <p>Humidity</p>
+          </div>
+        </div>
+        <div class="col">
+          <img src="Images/wind.png" alt="Wind"/>
+          <div>
+            <p class="wind">15 km/h</p>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Made by <strong>Bhumik</strong></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
