@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Contact | bhumik.aep</title>
+  <style>
+    :root {
+      --primary-color: #2e7d32;
+      --secondary-color: #BDBDBD;
+      --text-dark: #212121;
+      --white: #fff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Ubuntu', sans-serif;
+    }
+
+    body {
+      background-color: var(--secondary-color);
+      color: var(--text-dark);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 3rem;
+      background-color: #333;
+    }
+
+    .logo i {
+      font-size: 24px;
+      color: var(--primary-color);
+    }
+
+    .links a {
+      color: #fff;
+      margin-left: 2rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .links a:hover,
+    .links a.active {
+      color: var(--primary-color);
+    }
+
+    .contact-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 4rem 2rem;
+      gap: 3rem;
+    }
+
+    .info {
+      max-width: 450px;
+    }
+
+    .info h1 {
+      font-size: 3rem;
+      margin-bottom: 1.2rem;
+      color: var(--primary-color);
+    }
+
+    .info p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .socials {
+      margin-top: 1.5rem;
+    }
+
+    .socials a {
+      display: inline-block;
+      margin-right: 15px;
+      font-size: 1.3rem;
+      color: #333;
+      transition: color 0.3s;
+    }
+
+    .socials a:hover {
+      color: var(--primary-color);
+    }
+
+    .form-card {
+      background-color: #f0f0f0;
+      padding: 2.5rem 2rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      width: 100%;
+      max-width: 520px;
+      transition: transform 0.3s ease;
+    }
+
+    .form-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .form-card h2 {
+      color: var(--primary-color);
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+      text-align: center;
+    }
+
+    .form-card form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .form-card input,
+    .form-card textarea {
+      padding: 0.8rem 1rem;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      font-size: 1rem;
+      background-color: #fff;
+      color: #333;
+      transition: border-color 0.3s;
+    }
+
+    .form-card input:focus,
+    .form-card textarea:focus {
+      border-color: var(--primary-color);
+      outline: none;
+    }
+
+    .form-card button {
+      padding: 0.8rem 1rem;
+      background-color: var(--primary-color);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .form-card button:hover {
+      background-color: #256d2c;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      margin-top: 4rem;
+    }
+
+    footer .socials a {
+      color: white;
+      margin: 0 10px;
+      font-size: 1.1rem;
+      text-decoration: none;
+    }
+
+    footer .socials a:hover {
+      color: var(--primary-color);
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">
+      <i class="fa-solid fa-code"></i>
+    </div>
+    <div class="links">
+      <a href="index.html">About</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html" class="active">Contact</a>
+    </div>
+  </nav>
+
+  <section class="contact-section">
+    <div class="info">
+      <h1>Let’s Get in Touch</h1>
+      <p>Whether you're looking for top-tier video editing, motion graphics, or creative collaboration — I'm just one message away. Drop your thoughts below, and let’s create something unforgettable.</p>
+      <div class="socials">
+        <a href="https://github.com/Bhumik1906" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/bhumik.aep/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/bhumik1906/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+
+    <div class="form-card">
+      <h2>Send a Message</h2>
+      <form action="mailto:bhumik1906@gmail.com" method="POST" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Bhumik Shah | Portfolio</p>
+    <div class="socials">
+      <a href="https://github.com/Bhumik1906">Github</a>
+      <a href="https://www.instagram.com/bhumik.aep/">Instagram</a>
+      <a href="https://www.linkedin.com/in/bhumik1906/">LinkedIn</a>
+    </div>
+  </footer>
+
+</body>
+</html>
